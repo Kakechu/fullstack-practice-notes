@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf dist && cd C:/Users/laura/OneDrive - Laura-Kaisa Leinonen/Koulu/FullStackOpen/Harjoittelua/Osa2/harjoittelua2 && npm run build && cp -r dist C:/Users/laura/OneDrive - Laura-Kaisa Leinonen/Koulu/FullStackOpen/Harjoittelua/Osa3/Harjoittelua",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Kaisa Leinonen",
   "license": "ISC",
