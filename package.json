@@ -6,7 +6,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd \"C:/Users/laura/OneDrive - Laura-Kaisa Leinonen/Koulu/FullStackOpen/Harjoittelua/Osa2/harjoittelua2\" && npm run build && @powershell Copy-Item -Path dist -Destination \"C:/Users/laura/OneDrive` -` Laura-Kaisa Leinonen/Koulu/FullStackOpen/Harjoittelua/Osa3/Harjoittelua\" -Recurse",
+    "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd C:/Users/laura/Projektit/FullStackOpen/Harjoittelua/Osa2/notes-front && npm run build && @powershell Copy-Item dist -Recurse C:/Users/laura/Projektit/FullStackOpen/Harjoittelua/Osa3/Harjoittelua",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Kaisa Leinonen",
