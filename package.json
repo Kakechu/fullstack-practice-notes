@@ -7,17 +7,23 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd C:/Users/laura/Projektit/FullStackOpen/Harjoittelua/Osa2/notes-front && npm run build && @powershell Copy-Item dist -Recurse C:/Users/laura/Projektit/FullStackOpen/Harjoittelua/Osa3/Harjoittelua",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "author": "Kaisa Leinonen",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.13.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@stylistic/eslint-plugin-js": "^4.2.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
     "nodemon": "^3.1.9"
   }
 }
