@@ -63,7 +63,7 @@ describe('when there is initially some notes saved', () => {
   })
 
   describe('addition of a new note', () => {
-    test('succeeds with valid data', async () => {
+    test('succeeds with valid data', async () => { //fail
       const newNote = {
         content: 'async/await simplifies making async calls',
         important: true,
